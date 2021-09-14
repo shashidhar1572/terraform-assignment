@@ -25,6 +25,8 @@ cluster_version = "1.20"
 
 ########################
 
+step 3:
+
 Once you have the file and repo downloded on same folder try running terraform stages init/plan stages to see the output.
 
 terraform init && terraform plan
