@@ -5,15 +5,13 @@ module "eks" {
   vpc_id          = module.vpc.vpc_id
   subnets         = module.vpc.private_subnets
 
-  node_groups = {
-    eks_nodes = {
-      desired_capacity = 1
-      max_capacity     = 1
-      min_capaicty     = 2
 
-      instance_type = "t2.small"
+  worker_groups = [
+    {
+      instance_type = "t3.small"
+      asg_max_size  = 2
     }
-  }
+  ]
 
   manage_aws_auth = false
 }
