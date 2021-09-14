@@ -8,7 +8,7 @@ module "eks" {
 
   worker_groups = [
     {
-      instance_type = "t3.small"
+      instance_type = "m4.large"
       asg_max_size  = 2
     }
   ]

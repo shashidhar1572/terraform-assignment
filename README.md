@@ -2,6 +2,8 @@ This repo is for terraform assignment
 
 how to use:
 
+prerequisite: aws cli and terraform 1.0.6
+
 step 1:\
 Configure your credentails on a file\
 easy way is to use aws command
